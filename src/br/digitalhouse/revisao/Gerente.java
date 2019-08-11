@@ -7,16 +7,16 @@ public class Gerente extends Funcionario implements Imposto{
         super(novoNome, novoNascimento, novoSalario);
         area = novaArea;
     }
-//
-//    @Override
-//    public Float calculaImposto() {
-//        float calImposto = (float) (super.getSalario() * 0.05);
-//        return calImposto;
-//    }
 
-    public Float calculaImposto(){
-        return getSalario() * 0.05f;
+    @Override
+    public Float calculaImposto() {
+        float calImposto = (float) (super.getSalario() * 0.05);
+        return calImposto;
     }
+
+//    public Float calculaImposto(){
+//        return getSalario() * 0.05f;
+//    }
 
     @Override
     public void imprimeDados() {

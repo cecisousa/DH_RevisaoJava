@@ -2,6 +2,7 @@ package br.digitalhouse.revisao;
 
 public class Funcionario extends Pessoa implements Imposto {
     private Float salario;
+    private Float porcentagem;
 
     public Funcionario(String novoNome, Data novoNascimento, Float novoSalario) {
         super(novoNome, novoNascimento);
@@ -13,11 +14,6 @@ public class Funcionario extends Pessoa implements Imposto {
         float calImposto = (float) (salario * 0.03);
         return calImposto;
     }
-
-//    public Float calculaImposto(){
-//        float calImposto = (float) (salario * 0.03);
-//        return calImposto;
-//    }
 
 //    public Float calculaImposto(){
 //        return salario * 0.03f;
